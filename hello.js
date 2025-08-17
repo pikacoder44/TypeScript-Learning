@@ -1,5 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var a = 5;
-a = 10;
+function abcd(obj) { }
+abcd({
+    name: "Hashir",
+    email: "hashir@gmail.com",
+    password: "12",
+});
 //# sourceMappingURL=hello.js.map

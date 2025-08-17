@@ -1,2 +1,14 @@
-var a = 5
-a=10
+interface User {
+  name: string;
+  email: string;
+  password: string;
+  gender?: string;
+}
+
+function abcd(obj: User) {}
+
+abcd({
+  name: "Hashir",
+  email: "hashir@gmail.com",
+  password: "12",
+});
