@@ -11,4 +11,5 @@ abcd({
   name: "Hashir",
   email: "hashir@gmail.com",
   password: "12",
+  king:"OP"
 });
