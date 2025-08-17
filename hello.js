@@ -6,4 +6,8 @@ abcd({
     email: "hashir@gmail.com",
     password: "12",
 });
+function Abcde(data) {
+    data.age = 20;
+    data.name = "Hashir";
+}
 //# sourceMappingURL=hello.js.map
