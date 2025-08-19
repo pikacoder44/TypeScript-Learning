@@ -10,6 +10,6 @@ class User {
     }
 }
 let u1 = new User("Hashir");
-u1.changeName(); // Not Allowed
+// u1.changeName() // Not Allowed
 console.log(u1);
 //# sourceMappingURL=hello.js.map
