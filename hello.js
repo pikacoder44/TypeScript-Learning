@@ -1,24 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class BakeryItem {
+class User {
     name;
-    category;
-    price;
-    constructor(name, category, price) {
+    constructor(name) {
         this.name = name;
-        this.category = category;
-        this.price = price;
-        this.name = name;
-        this.category = category;
-        this.price = price;
-        console.log("Object Made -> ");
-        console.log("Name: ", this.name);
-        console.log("Price: ", this.price);
-        console.log("Category: ", this.category);
     }
-    makeBuiscuits() {
-        console.log("1 Buiscuit made");
+    changeName() {
+        this.name = "Changed";
     }
 }
-let b1 = new BakeryItem("milk", "Dairy", 160);
+let u1 = new User("Hashir");
+u1.changeName();
+console.log(u1);
 //# sourceMappingURL=hello.js.map

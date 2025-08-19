@@ -1,21 +1,11 @@
-class BakeryItem {
-  constructor(
-    public name: string,
-    public category: string,
-    public price: number
-  ) {
-    this.name = name;
-    this.category = category;
-    this.price = price;
-    console.log("Object Made -> ");
-    console.log("Name: ", this.name);
-    console.log("Price: ", this.price);
-    console.log("Category: ", this.category);
-  }
+class User {
+  constructor(public name: string) {}
 
-  makeBuiscuits() {
-    console.log("1 Buiscuit made");
+  changeName() {
+    this.name = "Changed";
   }
 }
 
-let b1 = new BakeryItem("milk", "Dairy", 160);
+let u1 = new User("Hashir")
+u1.changeName()
+console.log(u1)
