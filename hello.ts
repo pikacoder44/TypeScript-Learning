@@ -1,15 +1,23 @@
 class User {
-  constructor(public name: string, public age:number, public gender?:string) {}
+  constructor(
+    public _name: string,
+    public age: number,
+    public gender?: string
+  ) {}
 
-  changeName() {
-    this.name = "Changed";
+  // Getter and Setter
+  get name() {
+    return this._name;
+  }
+  set name(val: string) {
+    this._name = val;
   }
 }
 
-// ?: makes the parameter optional 
+let u1 = new User("Hashir", 21, "male");
+let u2 = new User("king", 44);
 
-let u1 = new User("Hashir",21,"male");
-let u2 = new User("king",44)
-// u1.changeName() // Not Allowed
-console.log(u1);
-console.log(u2)
+u1.name = "OK"; // set name
+
+console.log(u1.name); // get name
+console.log(u2);
