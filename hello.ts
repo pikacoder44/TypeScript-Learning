@@ -1,11 +1,11 @@
 class User {
-  constructor(public name: string) {}
+  constructor(public readonly name: string) {}
 
   changeName() {
     this.name = "Changed";
   }
 }
 
-let u1 = new User("Hashir")
-u1.changeName()
-console.log(u1)
+let u1 = new User("Hashir");
+// u1.changeName() // Not Allowed
+console.log(u1);
