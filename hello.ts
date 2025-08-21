@@ -1,22 +1,16 @@
 /*
 
-   ------------------------------------- Generic Interfaces -----------------------------------------------
+   ------------------------------------- Generic Classes -----------------------------------------------
 
 
 */
 
-interface Car<T> {
-  name: string;
-  price: number;
-  key: T;
+class BottleMaker<T> {
+  constructor(key: T) {
+    console.log("Key: ", key);
+    console.log("Type of key: ", typeof key);
+  }
 }
 
-function abcd(obj: Car<string>) {
-  console.log(obj);
-}
-
-abcd({
-  name: "Supra",
-  price: 10000000,
-  key: "supra-2025",
-});
+let b1 = new BottleMaker<string>("ok");
+let b2 = new BottleMaker<number>(2);
