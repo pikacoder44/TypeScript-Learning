@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /*
 
    ------------------------------------- Generics -----------------------------------------------
@@ -26,4 +25,24 @@ We can't do that, because if you have to make type of a any, then the reason of 
 
 
 */
+Object.defineProperty(exports, "__esModule", { value: true });
+/*
+
+So what we can do?
+We can tell TS how to treat arguments of function ( types of args ) while using that function
+
+
+*/
+function logger(a) {
+    // T is template name it can be anything like H, K , L etc
+    console.log(a);
+}
+logger("ok");
+logger(22);
+logger(true);
+logger(null);
+// and this <string> , <number>   is not necessary, TS can infer based on data
+logger(undefined);
+logger("Logged String");
+// These are also fine ^
 //# sourceMappingURL=hello.js.map
